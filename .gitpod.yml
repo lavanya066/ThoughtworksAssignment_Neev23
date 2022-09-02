@@ -1,0 +1,24 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - before: clear && echo 'Welcome to GuruShifu...'
+    init: ./.ignore/init.sh
+    command: ./.ignore/start.sh  && cat .ignore/banner.txt
+
+ports:
+  - port: 3000
+    onOpen: ignore
+  - port: 8080
+    onOpen: ignore
+    visibility: public
+  - port: 3306
+    onOpen: ignore
+    visibility: private
+
+vscode:
+  extensions:
+    - k--kato.intellij-idea-keybindings
+    - vscjava.vscode-java-test
+    - vscjava.vscode-java-debug
+    - https://github.com/redhat-developer/vscode-java/releases/download/v1.7.0/java-1.7.0.vsix
