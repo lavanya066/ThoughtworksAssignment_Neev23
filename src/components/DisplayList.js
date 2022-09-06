@@ -19,7 +19,7 @@ function DisplayList(props) {
                              <h3>{val.name}</h3>
                              
                              <div>
-                                 <DeleteIcon className='delete' onClick={(e)=>{
+                                 <DeleteIcon data-testid="delete" className='delete' onClick={(e)=>{
                                     
                                      
                                     props.deleteItem(val.name)
@@ -28,7 +28,7 @@ function DisplayList(props) {
                                  }
                                      
                                  }></DeleteIcon>
-                             <EditIcon className='edit' onClick={(e)=>{
+                             <EditIcon data-testid="update" className="edit" onClick={(e)=>{
                                 props.updateItem(val.name,val.key)
                              }}></EditIcon>
                                  </div>

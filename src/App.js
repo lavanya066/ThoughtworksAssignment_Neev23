@@ -17,7 +17,7 @@ function App() {
   }
   function addList(e){
     if(update){
-      console.log(name)
+      
       setList(todoList.map((v)=>{
         var temp = Object.assign({}, v);
         if(temp.name==name){
@@ -25,9 +25,7 @@ function App() {
         }
         return temp
       }))
-    //   var index=todoList.indexOf({name:name,key:key});
-    //   console.log(index)
-    // todoList[index].name=todoName
+  ß
     setUpdate(false)
     setName("")
     
@@ -46,7 +44,7 @@ function App() {
   
   }
   function updateItem(val,key){
-    console.log(todoList)
+    
     setName(val)
     setUpdate(true)
     setKey(key)
@@ -55,11 +53,11 @@ function App() {
 
   }
   return (
-    <div className="App">
+    <div data-testid="mainDiv">
       <h1>Todo App</h1>
       <label  >Enter todo:</label>
-      <input type="text" id="totdoinp" onChange={changeInp} value={todoName}></input>
-      <button onClick={addList}> Add</button>
+      <input data-testid="input" type="text" id="totdoinp" onChange={changeInp} value={todoName}></input>
+      <button onClick={addList} data-testid="add"> Add</button>
       <DisplayList list={todoList} deleteItem={deleteItem} updateItem={updateItem}></DisplayList>
     </div>
   );
