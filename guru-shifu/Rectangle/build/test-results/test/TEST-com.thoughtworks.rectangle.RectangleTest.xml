@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.thoughtworks.rectangle.RectangleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-09-02T16:39:24" hostname="gurushifu-gurushifugitp-f7mwgplrs5w" time="0.018">
-  <properties/>
-  <testcase name="shouldReturnAreaWhenLengthBreadthIsGiven()" classname="com.thoughtworks.rectangle.RectangleTest" time="0.018"/>
-  <system-out><![CDATA[29.0790104]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
